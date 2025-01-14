@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(49, 49, 49);
+}
+
+.one {
+    width: 300px;
+    height: 80px;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+
+}
+
+.two {
+    position: absolute;
+    top: 0;
+    right: 45%;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    animation-name: first;
+    animation-duration: 2s;
+    animation-delay: 0.75ms;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.96, 0.66);
+    animation-fill-mode: forwards;
+}
+
+@keyframes first {
+    0% {
+        top: 0;
+        right: 45%;
+        rotate: 0deg;
+    }
+
+    50% {
+        top: 562px;
+        right: 45%;
+        rotate: -10deg;
+    }
+    65%{
+        top: 562px;
+        right: 45.25%;
+        rotate: -15deg;
+    }
+    75%{
+        top: 562px;
+        right: 45.5%;
+        rotate: -20deg;
+    }
+
+    100% {
+        top: 642px;
+        right: 50%;
+        rotate: -90deg;
+    }
+}
+
+
+.three{
+    position: absolute;
+    top: 0;
+    right: 45%;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 127, 244);
+    animation-name: second;
+    animation-duration: 2s;
+    animation-delay: 1.25s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.96, 0.66);
+    animation-fill-mode: forwards;
+}
+
+@keyframes second {
+    0% {
+        top: 0;
+        right: 45%;
+        rotate: 0deg;
+    }
+
+    50% {
+        top: 540px;
+        right: 45%;
+        rotate:0deg;
+    }
+
+    75% {
+        top: 535px;
+        right: 45%;
+        rotate: 10deg;
+    }
+
+    100% {
+        top: 546px;
+        right: 40.5%;
+        rotate: 10deg;
+    }
+}
+
+.four{
+    position: absolute;
+    top: 0;
+    right: 45%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 204, 127);
+    animation-name: third;
+    animation-duration: 3s;
+    animation-delay:2s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.96, 0.66);
+    animation-fill-mode: forwards;
+}
+
+@keyframes third {
+    0% {
+        top: 0;
+        right: 45%;
+        rotate: 0deg;
+    }
+
+    50% {
+        top: 443px;
+        right: 45%;
+        rotate: 10deg;
+    }
+
+    80% {
+        top: 465px;
+        right: 35%;
+        rotate: 10deg;
+    }
+
+    85%{
+        top: 472px;
+        right: 33%;
+        rotate: 15deg;
+    }
+
+    90%{
+        top: 480px;
+        right: 32%;
+        rotate: 18deg;
+    }
+
+    95% {
+        top: 562px;
+        right: 30%;
+        rotate: 90deg;
+    }
+
+    100% {
+        top: 563px;
+        right: 29%;
+        rotate: 90deg;
+    }
+}
